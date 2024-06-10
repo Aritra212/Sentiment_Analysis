@@ -27,7 +27,7 @@ app.config['UPLOAD_FOLDER'] = IMAGE_FOLDER
 
 def init():
     global model,graph
-    model = load_model('sentiment_analysis_model_new.h5', custom_objects=custom_objects)
+    model = load_model('sentiment_analysis_model1.h5', custom_objects=custom_objects)
     # graph = tf.get_default_graph()
 
 @app.route('/', methods=['GET', 'POST'])
